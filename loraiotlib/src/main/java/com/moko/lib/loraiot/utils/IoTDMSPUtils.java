@@ -3,7 +3,7 @@ package com.moko.lib.loraiot.utils;
 import android.content.Context;
 import android.content.SharedPreferences.Editor;
 
-import com.moko.iotdm.IoTDMConstants;
+import com.moko.lib.loraiot.IoTDMConstants;
 
 
 public class IoTDMSPUtils {

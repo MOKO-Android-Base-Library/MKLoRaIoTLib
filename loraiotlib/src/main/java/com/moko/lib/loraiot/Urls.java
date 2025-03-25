@@ -2,7 +2,7 @@ package com.moko.lib.loraiot;
 
 import android.content.Context;
 
-import com.moko.iotdm.utils.IoTDMSPUtils;
+import com.moko.lib.loraiot.utils.IoTDMSPUtils;
 
 import okhttp3.MediaType;
 

@@ -5,10 +5,10 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.moko.iotdm.IoTDMConstants;
-import com.moko.iotdm.R;
-import com.moko.iotdm.databinding.DialogLoginBinding;
-import com.moko.iotdm.utils.IoTDMSPUtils;
+import com.moko.lib.loraiot.IoTDMConstants;
+import com.moko.lib.loraiot.R;
+import com.moko.lib.loraiot.databinding.DialogLoginBinding;
+import com.moko.lib.loraiot.utils.IoTDMSPUtils;
 import com.moko.lib.loraui.dialog.MokoBaseDialog;
 import com.moko.lib.loraui.utils.ToastUtils;
 

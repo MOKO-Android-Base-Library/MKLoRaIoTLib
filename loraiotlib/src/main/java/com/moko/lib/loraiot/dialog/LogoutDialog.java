@@ -4,10 +4,10 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.moko.iotdm.IoTDMConstants;
-import com.moko.iotdm.R;
-import com.moko.iotdm.databinding.DialogLogoutBinding;
-import com.moko.iotdm.utils.IoTDMSPUtils;
+import com.moko.lib.loraiot.IoTDMConstants;
+import com.moko.lib.loraiot.R;
+import com.moko.lib.loraiot.databinding.DialogLogoutBinding;
+import com.moko.lib.loraiot.utils.IoTDMSPUtils;
 import com.moko.lib.loraui.dialog.MokoBaseDialog;
 
 public class LogoutDialog extends MokoBaseDialog<DialogLogoutBinding> {
