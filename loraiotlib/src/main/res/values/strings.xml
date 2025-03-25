@@ -1,0 +1,6 @@
+<resources>
+    // net
+    <string name="main_sync_device">Sync to cloud</string>
+    <string name="account_exit">Exit</string>
+    <string name="lora_gateway_tips">* If you have a LoRa gateway, please config the gateway connect to MOKO LoRa server, the server address is 101.37.81.143, the port is 1700, the current supported channel are AS923, AU915_CH00-07, AU915_CH08-15, EU868, US915_CH00-07, US915_CH08-15,select the correct channel please.</string>
+</resources>

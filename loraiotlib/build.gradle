@@ -1,0 +1,71 @@
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+}
+
+android {
+    namespace 'com.moko.lib.loraiot'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    viewBinding {
+        enabled = true
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    // 声明发布 release 变体
+    publishing {
+        singleVariant('release') {
+            withSourcesJar() // 可选：与源码包 Task 合并
+        }
+    }
+
+}
+
+publishing {
+    repositories {
+        mavenLocal()
+    }
+
+    // publications 用于定义发布任务的配置块
+    publications {
+        // 这个 aarAndroid 可以随便填，只是一个任务名字而已
+        // MavenPublication必须有，这个是调用的任务类
+        aarAndroid(MavenPublication) {
+            // 这里头是artifacts的配置信息，不填会采用默认的
+            groupId = 'com.github.MOKO-Android-Base-Library'
+            artifactId = 'MKLoRIoTLib'
+            version = '1.0.0'
+
+            afterEvaluate {
+                // 使用 release 变体的组件（自动包含依赖信息）
+                from components.release
+            }
+        }
+    }
+}
+
+
+dependencies {
+    api 'com.github.MOKO-Android-Base-Library:MKLoRaUILib:1.0.7'
+    implementation 'com.lzy.net:okgo:3.0.4'
+}
