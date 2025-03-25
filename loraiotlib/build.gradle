@@ -11,7 +11,7 @@ android {
         minSdk 26
         targetSdk 34
         versionCode 1
-        versionName "1.0.3"
+        versionName "1.0.4"
     }
 
     buildTypes {
@@ -54,7 +54,7 @@ publishing {
             // 这里头是artifacts的配置信息，不填会采用默认的
             groupId = 'com.github.MOKO-Android-Base-Library'
             artifactId = 'MKLoRIoTLib'
-            version = '1.0.3'
+            version = '1.0.4'
 
             afterEvaluate {
                 // 使用 release 变体的组件（自动包含依赖信息）
@@ -66,6 +66,6 @@ publishing {
 
 
 dependencies {
-    api 'com.github.MOKO-Android-Base-Library:MKLoRaUILib:main-SNAPSHOT'
+    api 'com.github.MOKO-Android-Base-Library:MKLoRaUILib:1.0.8'
     api 'com.github.jeasonlzy.okhttp-OkGo:okgo:v3.0.4'
 }
