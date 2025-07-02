@@ -39,6 +39,8 @@ public class IoTDMConstants {
     public static final String EXTRA_KEY_DEVICE_MAC = "EXTRA_KEY_DEVICE_MAC";
     public static final String EXTRA_KEY_FROM_ACTIVITY = "EXTRA_KEY_FROM_ACTIVITY";
     public static final String EXTRA_KEY_FIRMWARE_CODE = "EXTRA_KEY_FIRMWARE_CODE";
+    public static final String EXTRA_KEY_SYNC_DEVICES = "EXTRA_KEY_SYNC_DEVICES";
+    public static final String EXTRA_KEY_DEVICE_MODEL = "EXTRA_KEY_DEVICE_MODEL";
     // request_code
     public static final int REQUEST_CODE_DEVICE_INFO = 101;
     public static final int REQUEST_CODE_SET_UUID = 102;
