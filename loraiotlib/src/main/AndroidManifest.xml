@@ -5,5 +5,10 @@
         android:allowBackup="true"
         android:theme="@style/LaunchActivityTheme"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.moko.lib.loraiot.activity.SyncDeviceActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|locale|layoutDirection"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
     </application>
 </manifest>
