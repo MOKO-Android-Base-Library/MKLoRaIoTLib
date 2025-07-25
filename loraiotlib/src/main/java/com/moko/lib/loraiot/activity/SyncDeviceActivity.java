@@ -1,9 +1,11 @@
 package com.moko.lib.loraiot.activity;
 
+import android.graphics.Rect;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.SystemClock;
+import android.view.DisplayCutout;
 import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
@@ -44,6 +46,17 @@ public class SyncDeviceActivity extends FragmentActivity implements BaseQuickAda
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().getDecorView().setOnApplyWindowInsetsListener((v, insets) -> {
+            DisplayCutout cutout = insets.getDisplayCutout();
+            if (cutout != null) {
+                List<Rect> rects = cutout.getBoundingRects();
+                if (rects.size() != 0) {
+                    getWindow().getDecorView().setPadding(cutout.getSafeInsetLeft(), cutout.getSafeInsetTop(),
+                            cutout.getSafeInsetRight(), cutout.getSafeInsetBottom());
+                }
+            }
+            return insets;
+        });
         mBind = ActivityDevicesBinding.inflate(getLayoutInflater());
         devices = getIntent().getParcelableArrayListExtra(IoTDMConstants.EXTRA_KEY_SYNC_DEVICES);
         mDeviceModel = getIntent().getIntExtra(IoTDMConstants.EXTRA_KEY_DEVICE_MODEL, 0);

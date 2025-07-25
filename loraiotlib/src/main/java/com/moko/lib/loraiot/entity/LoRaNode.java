@@ -12,6 +12,7 @@ public class LoRaNode implements Parcelable {
     public String region;
     // LW001-BG PRO(L) 10
     // LW001-BG PRO(M) 20
+    // LW003-B 25
     // LW004-PB 30
     // LW005-MP 40
     // LW006 45
