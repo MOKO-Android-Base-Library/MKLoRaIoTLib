@@ -16,7 +16,7 @@ public class Urls {
     /**
      * 正式环境
      */
-    private static final String HOST_URL_CLOUD = "http://cloud.mokotechnology.com/stage-api/";
+    private static final String HOST_URL_CLOUD = "https://cloud.mokotechnology.com/stage-api/";
 
     /**
      * 生产测试

@@ -10,8 +10,8 @@ android {
     defaultConfig {
         minSdk 28
         targetSdk 35
-        versionCode 110
-        versionName "1.1.0"
+        versionCode 111
+        versionName "1.1.1"
     }
 
     buildTypes {
@@ -54,7 +54,7 @@ publishing {
             // 这里头是artifacts的配置信息，不填会采用默认的
             groupId = 'com.github.MOKO-Android-Base-Library'
             artifactId = 'MKLoRIoTLib'
-            version = '1.1.0'
+            version = '1.1.1'
 
             afterEvaluate {
                 // 使用 release 变体的组件（自动包含依赖信息）
